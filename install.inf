@@ -1,0 +1,54 @@
+[Version]
+Signature="$Windows NT$"
+
+[DefaultInstall]
+CopyFiles = Scheme.Cur
+AddReg    = Scheme.Reg
+
+[DestinationDirs]
+Scheme.Cur = 10,"Cursors\MyCustomCursor"
+
+[Scheme.Reg]
+; 修正了 text 和 hand 的大小写，确保与 [Strings] 匹配
+HKCU,"Control Panel\Cursors\Schemes","%SCHEME_NAME%",0x00000000,"%10%\%CUR_DIR%\%pointer%,%10%\%CUR_DIR%\%help%,%10%\%CUR_DIR%\%work%,%10%\%CUR_DIR%\%busy%,%10%\%CUR_DIR%\%cross%,%10%\%CUR_DIR%\%text%,%10%\%CUR_DIR%\%hand%,%10%\%CUR_DIR%\%unavail%,%10%\%CUR_DIR%\%vert%,%10%\%CUR_DIR%\%horz%,%10%\%CUR_DIR%\%dgn1%,%10%\%CUR_DIR%\%dgn2%,%10%\%CUR_DIR%\%move%,%10%\%CUR_DIR%\%alternate%,%10%\%CUR_DIR%\%link%,%10%\%CUR_DIR%\%pin%,%10%\%CUR_DIR%\%person%"
+
+[Scheme.Cur]
+Normaloo.ani
+Helpoo.ani
+Workingoo.ani
+Busyoo.ani
+Precisionoo.ani
+Textoo.ani
+handwriting.cur
+Unavailableoo.ani
+Vertoo.ani
+Horzoo.ani
+Diag1oo.ani
+Diag2oo.ani
+Moveoo.ani
+Alternateoo.ani
+linkoo.ani
+locationoo.ani
+personoo.ani
+
+[Strings]
+CUR_DIR       = "Cursors\MyCustomCursor"
+SCHEME_NAME   = "oomouse"
+
+pointer       = "Normaloo.ani"
+help          = "Helpoo.ani"
+work          = "Workingoo.ani"
+busy          = "Busyoo.ani"
+cross         = "Precisionoo.ani"
+text          = "Textoo.ani"
+hand          = "handwriting.cur"
+unavail       = "Unavailableoo.ani"
+vert          = "Vertoo.ani"
+horz          = "Horzoo.ani"
+dgn1          = "Diag1oo.ani"
+dgn2          = "Diag2oo.ani"
+move          = "Moveoo.ani"
+alternate     = "Alternateoo.ani"
+link          = "linkoo.ani"
+pin           = "locationoo.ani"
+person        = "personoo.ani"
